@@ -1,3 +1,80 @@
+zsh-readable: A bugfixes branch for zsh-syntax-highlighting
+===========================================================
+
+`zsh-readable` provides syntax highlighting in interactive `zsh` sessions.
+It is a fork of [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+with some bugfixes and compatibility patches applied.
+
+The following patches are included:
+
+* Docs: Clarify installation instructions
+  ([PR 158](zsh-users/zsh-syntax-highlighting#158]))
+
+* Fix highlighting of: commands that span line boundaries (e.g.,
+  with multiline string literals or backslash-newline line continuations)
+  ([PR 159](zsh-users/zsh-syntax-highlighting#159]))
+
+* Fix highlighting of: prefix redirections (e.g., `<file command arg1 arg2`)
+  ([PR 161](zsh-users/zsh-syntax-highlighting#161]))
+
+* Feature: support the '`paste`' '`$zle_highlight`' context (new in zsh 5.0.9)
+  ([PR 175](zsh-users/zsh-syntax-highlighting#175]))
+
+* Fix highlighting of: The first element of array assignments (e.g.,
+  the "hello" in `typeset -a words; words=(hello world)`)
+  ([PR 179](zsh-users/zsh-syntax-highlighting#179]))
+
+How do I use this?
+------------------
+
+If you have an existing clone of `zsh-syntax-highlighting`, add a remote and
+switch to it:
+
+    git remote add zsh-readable https://github.com/zsh-readable/zsh-readable/
+    git fetch zsh-readable
+    git checkout -b bugfixes zsh-readable/bugfixes
+
+If you do not already have a clone, create one:
+
+    git clone --origin=zsh-readable https://github.com/zsh-readable/zsh-readable/
+
+In either case, your local repository will have a local branch called `bugfixes`
+which tracks the eponymous branch of the `zsh-readable/zsh-readable`
+repository.  Note the remote is called `zsh-readable`, not `origin` as usual.
+(If you followed the `git remote add …` steps, the `origin` remote will still
+point to the upstream `zsh-users/zsh-syntax-highlighting` repository.)
+
+Why did you fork?
+-----------------
+
+In short, because upstream appears to be unmanned (i.e., abandoned).
+
+We have made bugfixes and added compatibility with new shell features, and
+submitted each of those upstream as a patch (pull request), but the maintainers
+did not respond, and users started asking us to maintain an integrated branch
+with all our fixes.  So we did.
+
+We would like to collaborate with upstream.  The only reason we aren't doing so
+is that we [knocked on the door and nobody answered](http://www.zsh.org/mla/users/2015/msg00697.html).
+
+In general, our view of the fork is [well captured by Karl Fogel's advice on
+the matter](http://www.producingoss.com/en/forks.html#forks-initiating).
+
+Development model
+-----------------
+
+Patches should be based on the tip of the `bugfixes` branch — that's our main
+development branch, since `master` tracks upstream.
+
+Feedback? Questions?
+--------------------
+
+Feel free to email the authors or open a github issue with any questions,
+comments, or bugs.
+
+The upstream zsh-syntax-highlighting README follows.
+
+
 zsh-syntax-highlighting
 =======================
 
