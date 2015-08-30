@@ -5,7 +5,7 @@ zsh-readable: A bugfixes branch for zsh-syntax-highlighting
 It is a fork of [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 with some bugfixes and compatibility patches applied.
 
-![Screenshot](logo/logo-uncropped.png)
+![Screenshot](logo/logo-uncropped-small.png)
 
 The following patches are included:
 
