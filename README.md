@@ -38,6 +38,11 @@ If you do not already have a clone, create one:
 
     git clone --origin=zsh-readable https://github.com/zsh-readable/zsh-readable/
 
+Then source the file `./zsh-syntax-highlighting.zsh` at the end of your
+`.zshrc` file:
+
+    echo 'source ~/zsh-readable/zsh-syntax-highlighting.zsh' >> ~/.zshrc
+
 In either case, your local repository will have a local branch called `bugfixes`
 which tracks the eponymous branch of the `zsh-readable/zsh-readable`
 repository.  Note the remote is called `zsh-readable`, not `origin` as usual.
