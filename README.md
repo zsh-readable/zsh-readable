@@ -29,6 +29,10 @@ The following patches are included:
 How do I use this?
 ------------------
 
+_Update: I have been granted commit access upstream and merged all the aforementioned 
+fixes to upstream.  There is currently no reason to use this fork; 
+use [upstream](https://github.com/zsh-users/zsh-syntax-highlighting) instead._
+
 If you have an existing clone of `zsh-syntax-highlighting`, add a remote and
 switch to it:
 
