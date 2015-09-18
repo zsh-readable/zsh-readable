@@ -1,6 +1,15 @@
 zsh-readable: A bugfixes branch for zsh-syntax-highlighting
 ===========================================================
 
+__This repository was created as a fork of [zsh-syntax-highlighting][1] that
+contained some bugfixes and compatibility patches, because upstream was
+abandoned / unmanned / unmaintained.  Shortly after creating the fork, I was
+granted commit access upstream, and merged the fork back into the original
+upstream project.  This repository is now deprecated, but is left online for
+historical interest.__
+
+[1]: https://github.com/zsh-users/zsh-syntax-highlighting
+
 `zsh-readable` provides syntax highlighting in interactive `zsh` sessions.
 It is a fork of [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 with some bugfixes and compatibility patches applied.
@@ -28,10 +37,6 @@ The following patches are included:
 
 How do I use this?
 ------------------
-
-_Update: I have been granted commit access upstream and merged all the aforementioned 
-fixes to upstream.  There is currently no reason to use this fork; 
-use [upstream](https://github.com/zsh-users/zsh-syntax-highlighting) instead._
 
 If you have an existing clone of `zsh-syntax-highlighting`, add a remote and
 switch to it:
